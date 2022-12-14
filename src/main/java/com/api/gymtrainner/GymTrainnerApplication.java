@@ -14,9 +14,5 @@ public class GymTrainnerApplication {
 		SpringApplication.run(GymTrainnerApplication.class, args);
 	}
 
-	@RequestMapping("/")
-	@ResponseBody
-	String home() {
-		return "Hello World!";
-	}
+
 }
