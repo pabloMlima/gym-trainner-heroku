@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-//@SpringBootApplication
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
+@SpringBootApplication
+//@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 public class GymTrainnerApplication {
 
 	public static void main(String[] args) {
