@@ -15,8 +15,8 @@ public class MusclesController {
     MusclesService musclesService;
 
     @GetMapping("/list")
-    public ResponseEntity<?> listMuscles(){
-        
+    public String listMuscles(){
+        return "aaaa";
     }
 
 }
