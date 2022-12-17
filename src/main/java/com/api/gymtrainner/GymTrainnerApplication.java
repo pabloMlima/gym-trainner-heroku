@@ -20,10 +20,13 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 
 //
  @SpringBootApplication
+ /*
  @EnableAutoConfiguration(exclude = {
 		 DataSourceAutoConfiguration.class,
 		 DataSourceTransactionManagerAutoConfiguration.class,
 		 HibernateJpaAutoConfiguration.class})
+
+  */
 
 public class GymTrainnerApplication {
 
