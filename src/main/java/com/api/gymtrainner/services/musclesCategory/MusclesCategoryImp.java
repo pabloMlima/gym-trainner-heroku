@@ -18,11 +18,12 @@ public class MusclesCategoryImp implements MusclesCategoryService{
     @Autowired
     MusclesCategoryRepository musclesCategoryRepository;
 
+    @Override
     public List<MusclesCategory> list(){
         List<MusclesCategory> musclesCategories = musclesCategoryRepository.findAll();
         return musclesCategories;
     }
-
+    @Override
     public MusclesCategory store(MusclesCategoryDto musclesCategoryDto) throws ConstraintViolationException, ExceptionBasic {
         Optional<MusclesCategory> searchMuscle = musclesCategoryRepository.findByMuscleCategory(musclesCategoryDto.getName());
         if(searchMuscle.isPresent()){
