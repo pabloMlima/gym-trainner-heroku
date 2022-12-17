@@ -16,7 +16,7 @@ import java.util.Optional;
 public class MusclesCategoryImp implements MusclesCategoryService{
 
     @Autowired
-    MusclesCategoryRepository musclesCategoryRepository;
+    private MusclesCategoryRepository musclesCategoryRepository;
 
     @Override
     public List<MusclesCategory> list(){

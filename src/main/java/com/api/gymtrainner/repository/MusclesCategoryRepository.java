@@ -12,7 +12,7 @@ import java.util.Optional;
 public interface MusclesCategoryRepository extends JpaRepository<MusclesCategory, Long> {
 
     @Query(
-            value = "SELECT * FROM muscles WHERE name = :name LIMIT 1",
+            value = "SELECT * FROM muscles_category WHERE name = :name LIMIT 1",
             nativeQuery = true
     )
     Optional<MusclesCategory> findByMuscleCategory(@Param("name") String name);
