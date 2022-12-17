@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public interface MusclesCategoryService {
 
-    public List<MusclesCategory> list();
+    List<MusclesCategory> list();
 
-    public MusclesCategory store(MusclesCategoryDto musclesCategoryDto) throws ConstraintViolationException, ExceptionBasic;
+    MusclesCategory store(MusclesCategoryDto musclesCategoryDto) throws ConstraintViolationException, ExceptionBasic;
 }
