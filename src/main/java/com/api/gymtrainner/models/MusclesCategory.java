@@ -1,11 +1,16 @@
 package com.api.gymtrainner.models;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.List;
 import java.util.UUID;
 
 @Entity
 @Table(name="muscles_category")
+@Getter
+@Setter
 public class MusclesCategory {
 
     private static final long serialVersionUID = 1L;
